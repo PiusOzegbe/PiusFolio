@@ -21,8 +21,8 @@ const Projects = () => {
       </motion.div>
 
       <a href="https://blog-post-mu-nine.vercel.app/" target='blank'><motion.div className='w-4/5 sm:w-2/4 shadow-gray-600 hover:shadow-lg hover:shadow-gray-600 shadow project-container rounded transition flex flex-col items-center  mx-auto overflow-hidden relative p-4 sm:p-8 mb-4'
-      initial= {{opacity: 0, x: 200}}
-      whileInView={{opacity: 1, x: 0}}
+      initial= {{opacity: 0, y: 100}}
+      whileInView={{opacity: 1, y: 0}}
       transition={{duration: 0.5}}
       viewport={{once: true}}
       >
@@ -40,8 +40,8 @@ const Projects = () => {
 
 
     <motion.div className='w-4/5 mt-16 sm:w-2/4 shadow-gray-600 hover:shadow-lg hover:shadow-gray-600 shadow project-container rounded transition flex flex-col items-center  mx-auto overflow-hidden relative p-4 sm:p-8 mb-4'
-    initial= {{opacity: 0, x: -200}}
-    whileInView={{opacity: 1, x: 0}}
+    initial= {{opacity: 0, y: 100}}
+    whileInView={{opacity: 1, y: 0}}
     transition={{duration: 0.5}}
     viewport={{once: true}}
     >
@@ -58,8 +58,8 @@ const Projects = () => {
     </motion.div>
 
     <motion.div className='w-4/5 sm:w-2/4 mt-16 shadow-gray-600 hover:shadow-lg hover:shadow-gray-600 shadow project-container rounded transition flex flex-col items-center  mx-auto overflow-hidden relative p-4 sm:p-8 mb-4'
-    initial= {{opacity: 0, x: 200}}
-    whileInView={{opacity: 1, x: 0}}
+    initial= {{opacity: 0, y: 100}}
+    whileInView={{opacity: 1, y: 0}}
     transition={{duration: 0.5}}
     viewport={{once: true}}
     >
