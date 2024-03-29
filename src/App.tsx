@@ -32,7 +32,7 @@ function App() {
         <Contact />
         <Footer />
         </motion.div>
-      </div>
+  </div>
   )
 }
 

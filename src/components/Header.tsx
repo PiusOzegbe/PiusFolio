@@ -2,6 +2,7 @@ import { faFacebook, faXTwitter, faLinkedin, faGithub } from '@fortawesome/free-
 import {faFolderOpen} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState, useEffect } from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
 
@@ -30,6 +31,9 @@ const Header = () => {
       document.body.classList.remove('no-scroll');
     }
 
+    console.log(isActive);
+    
+
 
   return (
     <>
@@ -43,10 +47,10 @@ const Header = () => {
          <nav>
             <ul className="flex space-y-7 items-center flex-col lg:flex lg:flex-row lg:space-x-10 lg:space-y-0">
               {isActive ? <FontAwesomeIcon icon={faFolderOpen} className='fa-md' /> : ""}
-              <li className={`nav_link transition`}><a href='#home'>Home</a></li>
-              <li className={`nav_link transition`}><a href='#about'>About</a></li>
-              <li className={`nav_link transition`}><a href='#projects'>Projects</a></li>
-              <li className={`nav_link transition`}><a href='#contact'>Contact</a></li>
+              <li onClick={()=> setIsActive(false)} className={`nav_link transition`}><HashLink to='#home'>Home</HashLink></li>
+              <li onClick={()=> setIsActive(false)} className={`nav_link transition`}><HashLink to='#about'>About</HashLink></li>
+              <li onClick={()=> setIsActive(false)} className={`nav_link transition`}><HashLink to='#projects'>Projects</HashLink></li>
+              <li onClick={()=> setIsActive(false)} className={`nav_link transition`}><HashLink to='#contact'>Contact</HashLink></li>
             </ul>
         </nav>
 
